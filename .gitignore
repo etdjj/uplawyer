@@ -1,0 +1,7 @@
+/.idea
+*.pyc
+*.sqlite3
+*.pdf
+*.doc
+*.docx
+migrations/

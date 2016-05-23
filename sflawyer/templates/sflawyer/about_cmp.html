@@ -1,0 +1,29 @@
+{% extends "sflawyer/base_extend.html" %}
+{% load staticfiles %}
+{% block title %}尚法概览{% endblock %}
+
+ {% block main_content %}
+		<div class="dev_fill"></div>
+		<div class="biaoti">
+		<img src={% static 'sflawyer/images/sf-about.jpg' %} />
+		</div>
+		<div class="pagecontent">
+		  <div id="subnav">
+			<div class="line2"></div>
+			<div class="subt"><a href={% url 'about' 'overall'%}>尚法·前言</a></div>
+			<div class="subt"><a href={% url 'about' 'theary'%}>尚法·理念</a></div>
+			<div class="subt selected"><a href={% url 'about' 'comp'%}>尚法·竞争力</a></div>
+		  </div>
+
+		  <div class="para">
+<p>深度细化的业务领域与服务产品</p>
+<p>深刻理解行业的专业团队</p>
+<p>项目化的运营管理模式</p>
+<p>多元化的战略伙伴与渠道</p>
+<p>遍布全球的服务网络</p>
+<p>严格的风控与质保服务体系</p>
+          </br>
+		  </div>
+		  <div style="clear:both;"></div>
+        </div>
+ {% endblock %}

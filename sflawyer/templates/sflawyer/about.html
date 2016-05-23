@@ -1,0 +1,28 @@
+{% extends "sflawyer/base_extend.html" %}
+{% load staticfiles %}
+{% block title %}尚法概览{% endblock %}
+
+ {% block main_content %}
+		<div class="dev_fill"></div>
+		<div class="biaoti">
+		<img src={% static 'sflawyer/images/sf-about.jpg' %} />
+		</div>
+		<div class="pagecontent">
+		  <div id="subnav">
+			<div class="line2"></div>
+			<div class="subt selected"><a href={% url 'about' 'overall'%}>尚法·前言</a></div>
+			<div class="subt"><a href={% url 'about' 'theary'%}>尚法·理念</a></div>
+			<div class="subt"><a href={% url 'about' 'comp'%}>尚法·竞争力</a></div>
+		  </div>
+
+		  <div class="para">
+		  <p>在继往开来的新时代，上海尚法律师事务所以法律产业化思维来引导，以全球渠道与互联网为支撑，创新专业服务领域，为客户提供深度专业、诚信高效的法律服务。以平台式服务理念为核心，打造集执业平台、业务综合管理开发平台、全球资源聚集平台三位一体的国际化律师事务所。</p>
+<p>1999年，上海大学法学院的教授发起设立，致力于知识产权、海事海商、建筑工程等领域的法律服务，取得过辉煌的业绩。经过15年的沉淀，聚集了一批精英律师，他们拥有跨政府、司法、传媒、大型集团、上市公司的资源背景，洞悉律师与律师组织发展困境与挑战。现在我们以国际化、产业化、规模化为发展导向，潜心于将法律、团队、管理、专业、市场整合，推进专业服务产业项目化，全面改变目前律师业整体生态与生态模式，这就是我们的事业。</p>
+<p>基于此，我们知晓并深刻赞同，正直谦逊、自主管理、思己利人、追求卓越是我们团队成员必备的秉性；秉承开放平等、合作、分享、共赢的精神，竭力为律师、为员工打造具有人文关怀、有尊严、有激情的发展空间；形成日进益精、创新求变、开放共享、令人信赖的文化。</p>
+<p>为此，我们须目标清晰、规则明确、执行高效、激励到位，塑造完美团队，一步步迈向卓越。</p>
+          </br>
+		  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——尚法律师机构管理合伙人团队</p>
+		  </div>
+		  <div style="clear:both;"></div>
+		</div>
+ {% endblock %}

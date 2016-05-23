@@ -1,0 +1,294 @@
+{% extends "sflawyer/base_extend.html" %}
+{% load staticfiles %}
+{% block title %}专业团队{% endblock %}
+{% block headsource %}
+<script language="javascript">
+$(function(){
+
+var keCutNum=0;
+var relNum=$(".prof_subnav li").size();
+var keCutNumOld=0;
+
+function HideOne(index){
+	$(".prof_block .prof_each").eq(index).hide();
+	$(".prof_subnav li").eq(index).children(".subt:first").removeClass("select_nav");
+}
+
+
+function ShowOne(index){
+	$(".prof_block .prof_each").eq(index).show();
+	$(".prof_subnav li").eq(index).children(".subt:first").addClass("select_nav");
+}
+
+function ClearAll(){
+	var i=0;
+
+	while (i<relNum)
+	{
+		HideOne(i);
+		i = i + 1;
+	}
+
+	ShowOne(0);
+}
+
+ClearAll();
+
+$(".prof_subnav li").click(function(){
+	keCutNumOld = keCutNum;
+	keCutNum=$(".prof_subnav li").index(this);
+
+	HideOne(keCutNumOld);
+	ShowOne(keCutNum);
+});
+
+})
+</script>
+{% endblock %}
+ {% block main_content %}
+			<div class="dev_fill"></div>
+			<div class="biaoti">
+				<img src={% static 'sflawyer/images/prof.jpg' %} />
+			</div>
+			<div class="pagecontent">
+		    <ul class="prof_subnav">
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">金融领域</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">资本市场与证券</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">公司日常业务</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">知识产权</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">房地产与建筑工程</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">政府事务</div>
+			</li>
+
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">国际事务</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">能源与环保</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">资信业务</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">产业园区业务</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">互联网与电信</div>
+			</li>
+		  	<li>
+		    	<div class="line_t"></div>
+				<div class="subt">争议解决</div>
+			</li>
+
+		    </ul>
+
+		 	<div class="prof_block">
+			 	<div class="prof_each">
+					<div class="preview_title">金融领域</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>银行常规业务与投行业务</li>
+							<li>保险与信托</li>
+							<li>金融衍生品与基金产品</li>
+							<li>资产包与不良资产处置</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">资本市场与证券</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>证券发行与上市</li>
+							<li>并购重组与定向增发</li>
+							<li>上市公司常年法律顾问</li>
+							<li>新三板业务</li>
+							<li>私募股权基金与风险投资</li>
+							<li>股权激励</li>
+							<li>证券化与金融衍生工具</li>
+							<li>财富管理</li>
+							<li>P2P类金融</li>
+							<li>股权众筹</li>
+							<li>金融租赁</li>
+							<li>互联网金融</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">公司日常业务</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>公司法律顾问</li>
+							<li>税务法律事务</li>
+							<li>劳动法律事务</li>
+							<li>招投标法律事务</li>
+							<li>法律风险管理事务</li>
+							<li>企业项目融资</li>
+							<li>担保与拍卖法律事务</li>
+							<li>公司治理法律事务</li>
+							<li>国有企业法律事务</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">知识产权</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>商标、专利、版权的申请</li>
+							<li>美国与国际专利申请</li>
+							<li>知识产权权利体系建设与规划</li>
+							<li>专利规避设计</li>
+							<li>商业秘密保护</li>
+							<li>两高认定</li>
+							<li>专精特新认定</li>
+							<li>维权打假与诉讼</li>
+							<li>知识产权代理权与产权交易</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">房地产与建筑工程</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>房地产开发与交易</li>
+							<li>建筑工程</li>
+							<li>土地规划与利用</li>
+							<li>物业管理及租赁</li>
+							<li>PPP模式</li>
+							<li>EPC模式</li>
+							<li>棚改项目</li>
+							<li>寺庙的开发与建设</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">政府事务</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>政府法律顾问</li>
+							<li>代表政府草拟、签订合同及进行谈判</li>
+							<li>代理政府参加诉讼</li>
+							<li>政府拆迁法律顾问</li>
+							<li>协助政府进行法制宣传教育</li>
+							<li>办理政府委托办理的其他法律事务</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">国际事务</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>外商投资</li>
+							<li>海外投资</li>
+							<li>国际贸易</li>
+							<li>海事海商</li>
+							<li>国际工程承包</li>
+							<li>可再生资源进口</li>
+							<li>其他涉外民商事法律业务</li>
+							<li>涉外争议解决</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">能源与环保</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>合同能源管理（EMC</li>
+							<li>低碳能源园区</li>
+							<li>分布式能源</li>
+							<li>环境保护</li>
+							<li>清洁能源交易</li>
+							<li>矿产资源</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">资信业务</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>资信调查与资信报告法律事务</li>
+							<li>信用管理法律事务</li>
+							<li>商账处理</li>
+							<li>担保法律事务</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">产业园区业务</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>园区投资政策咨询</li>
+							<li>园区建设法律服务</li>
+							<li>文化创意法律服务</li>
+							<li>创业法律服务</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">互联网与电信</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			 	<div class="prof_each">
+					<div class="preview_title">争议解决</div>
+					<div class="line_horiz"></div>
+					<div class="preview_cont">
+						<ul>
+							<li>刑事业务</li>
+							<li>重大民商事诉讼</li>
+							<li>再审申诉业务</li>
+							<li>产品质量</li>
+							<li>婚姻家庭与继承</li>
+						</ul>
+					</div>
+        		</div> <!--prof_each-->
+
+			</div>  <!--prof_block-->
+
+	   		</div> <!--pagecontent-->
+ {% endblock %}

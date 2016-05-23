@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--
+load block
+-->
+{% block load %}{% endblock %}
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--
+    load title
+    -->
+    <title>{% block title %}{% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'sflawyer/css/maina.css'%}">
+    <link type="text/css" rel="stylesheet" href="{% static 'sflawyer/css/pop.css'%}">
+    <script language="javascript" src="{% static 'sflawyer/js/jquery.js' %}"></script>
+
+    <!--
+    load more source
+    -->
+    {% block headsource %}{% endblock %}
+
+    <!--
+    load more style
+    -->
+    <style>{% block style %}
+    {% endblock %}</style>
+
+</head>
+<body>
+    <!--
+    load nav/content/footer
+    -->
+    <div id="wrap">
+        {% block nav %}
+            <div class="header">
+                <div class="head_up">
+                    <a href="/"><img src={% static 'sflawyer/images/updown_logo.jpg' %} class="head_logo_img"/></a>
+                    <img src={% static 'sflawyer/images/slogan.jpg' %} class="sologan"/>
+                    <div id="search_icon1"></div>
+    <input name="searchword" id="searchbox1" maxlength="10" class="inputbox search-query" size="20" value="搜索..." onblur="if (this.value=='') this.value='搜索...';" onfocus="if (this.value=='搜索...') this.value='';" type="text">		<input name="task" value="search" type="hidden">
+                    <div style="clear:both;"></div>
+                </div>
+            <ul class="head_nav_ul">
+                <li>
+                    <a href={% url 'about' 'overall'%}>尚法概览</a>
+                </li>
+                <li>
+                    <a href={% url 'team'%}>专业团队</a>
+                </li>
+                <li>
+                    <a href={% url 'part'%}>合作平台</a>
+                </li>
+                <li>
+                    <a href={% url 'book' ''%}>尚法论著</a>
+                </li>
+                <li>
+                    <a href={% url 'good'%}>社会公益</a>
+                </li>
+                <li class="lastone">
+                    <a href={% url 'jion'%}>加入我们</a>
+                </li>
+            </ul>
+                <div style="clear:both;"></div>
+            </div>
+        {% endblock %}
+        <div id="bg_pic">
+            {% block content %}{% endblock %}
+            <div style="clear:both;"></div>
+        </div>
+        {% block footer %}{% endblock %}
+    </div>
+</body>
+</html>

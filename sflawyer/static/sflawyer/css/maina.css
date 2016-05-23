@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0px;}
+
+* a { text-decoration:none}
+* a:link { color:#000000}
+* a:visited {color:#000000}
+* a:hover { color:#A62B4D}
+
+ul, ol, li {list-style-type:none;vertical-align:0; padding:0px; margin:0px}
+
+body, button, input, select, textarea {
+    /*font-size:13px;*/
+	/*line-height:1.5;*/
+	/*font-family:tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;font-family:'Hiragino Sans GB',"Microsoft Yahei",sans-serif;*/
+    font-family:微软雅黑,楷体,tahoma, arial, "Hiragino Sans GB","Microsoft Yahei", 宋体, sans-serif;
+	-webkit-font-smoothing:antialiased;	
+	padding: 0px
+}
+
+#wrap{ width:100%; height:auto; margin:0px;background-color:#FFFFFF;}
+
+.header {width: 1000px; height: auto; margin:10px auto 5px auto;}
+	.head_up {width: 1000px; height: auto; margin: 0px}
+		.head_logo_img {width:100px; height:89px; float:left}
+		.sologan {float:left; width: 301px; height: 24px; margin:22px 0px 0px 10px}
+		
+#search_icon1{ 
+    float:right; height: 20px; width: 13px; background: url(../images/search_icon.gif) no-repeat; cursor:pointer; margin-top:4px;
+	margin-top: 37px;
+}
+
+#searchbox1 { 
+    float:right; margin-top:36px; background:none;
+    height: 20px; width: 187px; 
+/*	background: url(../images/search_icon.gif) no-repeat;
+	background-position: 187px 2px ;
+    background-color: transparent; 
+	padding: 0px 15px 0px 0px; */
+    border-style: solid;  
+    border-width: 0px 0px 1px 0px;  
+    border-color: #999999; 
+    outline:0;
+	font-size:11px; color:#212121;
+	font-family:Verdana, "微软雅黑" ;
+}
+
+.head_nav_ul { width:1000px; height:40px; margin:5px auto 0px auto; padding:0px;}
+.head_nav_ul li 
+	{
+	   width: 181.8px; height: 40px; float:left; margin:0px; text-align:left; line-height:40px;
+	}
+.head_nav_ul .lastone {width: 90.9px;}
+.head_nav_ul li a {font-size: 16px; font-weight:bolder; letter-spacing: 1px; color: #2F2F2F; font-family:"黑体"; color:#555555}
+.head_nav_ul li a:hover {color: #A62B4D}
+
+#bg_pic{background-image:url(../images/bg2.jpg); margin-top:10px; background-repeat:no-repeat; background-size:cover;}
+
+.banner{width: 100%; height:380px; margin:0px auto 0px auto;position:relative;overflow:hidden;}
+.banner_short {width: 1000px; height: 350px}
+.showpic_ul {height:inherit; margin:0 auto;position:relative; padding: 0px; overflow:hidden;}
+.showpic_ul li {width:100%; height:inherit;}
+.showpic_ul img {height: inherit; width:inherit}
+
+.BntlL { position:absolute; left:0px; top:155px; z-index:10;cursor: pointer}
+.BntlR { position:absolute; right:0px; top:155px; z-index:10; cursor: pointer}
+
+.first,.two,.three,.four{ background-position:center top; background-repeat:no-repeat; height:500px; width:100%;}
+.first{background-image:url(../images/sf_supply.jpg);}
+.two{background-image:url(../images/two.jpg);}
+.three{background-image:url(../images/three.jpg);}
+.four{background-image:url(../images/four.jpg);}
+
+.page_content {width: 1000px; height: auto; margin: 20px auto 0px auto}
+
+.page_list { width: 303.3px; height: auto; margin-top:5px;margin-right:30px; float:left;}
+.page_list span { font-weight:bold; letter-spacing: 2px;}
+.page_list span span{color:#A62B4D}
+.page_list_h { display:block; width:100px; height: 20px; margin-top:5px; margin-left:3px}
+.page_list_mid {width: inherit; height: 25px;}
+.mid_line {width: 80px; height:2px; margin-top:6px; float:left; background-color: #A62B4D}
+.page_list_mid a {display:block; float:right; margin-right:10px; font-size:11px; color:#ADADAD;}
+.list_info_ul {padding-left:0px; width:inherit; height: auto; margin-top: 10px}
+.list_info_ul li {list-style-type:none;}
+.list_info_li { margin:5px 10px; width:auto; height: 20px; font-size: 13px}
+
+#footer{
+	width: 1000px;
+	height: 80px;
+	margin: 20px auto 0px auto;
+	border: 0px solid #F00;
+}
+
+.footer_left {width:1000px; height:80px;}
+.address {float: left; margin:25px 0 0 5px; width:250px; height: 70px;}
+.address span{color:#999; font-size:13px; margin-top: 15px; display:block; font-family:Verdana,"微软雅黑"}
+.tel {float: right; margin: 25px 15px 0 0; width: 250px, height: 70px; text-align:right}
+.tel span {color:#999; font-size:13px; margin-top: 15px; display:block}
+
+.sel_yes a{color:#A62B4D!important}
+
+.biaoti {width: 1000px; height:50px; margin: 10px auto}
+.biaoti img {width: 187px; height:inherit}
+
+.dev_fill {width:inherit; height:1px}
+
+.pagecontent {width: 1000px; height:360px; margin: 30px auto 0px auto;}
+
+#subnav { position:relative; width:200px; float: left}
+#subnav .line { width:1px; height:184px; background-image:url(../images/nav_line.gif); background-repeat:repeat-y; margin-right:14px; margin-top:0px; float:left;}
+#subnav .subt { font-size:13px; font-family:Verdana, "微软雅黑" ; color:#212121; margin-bottom:26px; cursor:pointer;}
+#subnav .subt a:link, #subnav .subt a:visited { color:#212121; text-decoration:none;}
+#subnav .subt a:hover, #subnav .subt a:active { color:#a62b4d; text-decoration:none; background:url(../images/select_icon.png) no-repeat 4px 7px; background-position:right; padding-right:10px;}
+#subnav .selected a, #subnav .selected a:link, #subnav .selected a:visited, #subnav .selected a:hover, #subnav .selected a:active { font-size:13px; font-family:Verdana, "微软雅黑" ; color:#a62b4d; text-decoration:none; background:url(../images/select_icon.png) no-repeat 4px 7px; background-position:right; padding-right:10px; margin-bottom:26px; }
+#subnav .suplogo { width:200px; margin-top:64px;}
+
+#subnav .line1 { width:1px; height:50px; background-image:url(../images/nav_line.gif); background-repeat:repeat-y; margin-right:14px; margin-top:0px; float:left;}
+
+#subnav .line2 { width:1px; height:110px; background-image:url(../images/nav_line.gif); background-repeat:repeat-y; margin-right:14px; margin-top:0px; float:left;}
+
+#subnav .line3 { width:1px; height:240px; background-image:url(../images/nav_line.gif); background-repeat:repeat-y; margin-right:14px; margin-top:0px; float:left;}
+
+.para {width: 720px; float: left}
+.para p {margin: 0px auto 10px auto; font-size: 14px}
+.para p ul,ol { padding-left:40px; font-size:13px}
+.para li { margin-top: 2px}
+.para ol li {list-style-type: decimal}
+.para ul li {list-style-type: disc}
+
+.comp p {font-size: 16px; font-weight:500}
+
+.prof_subnav {width: 300px; height: auto; float:left}
+.prof_subnav li {width: 150px; height: 40px; float: left}
+.prof_subnav li .line_t {width:1px; height:40px; background-image:url(../images/nav_line.gif); background-repeat:repeat-y; margin-right:14px; margin-top:0px; float:left;}
+.prof_subnav li .subt {font-size:13px; font-family:Verdana, "微软雅黑" ;color:#212121;cursor:pointer;}
+.prof_subnav li .subt:hover {color:#a62b4d;}
+
+.prof_block {margin:0px; float: left; width:100px; position:relative; height: auto; margin-left:50px}
+.prof_each { position:absolute; left: 0px; left: 0px}
+.prof_subnav li .select_nav {color:#a62b4d;}
+
+.para h1 {color:#A62B4D; margin-bottom:15px; font-size: 20px}
+
+.pagecontent .three_list_div {margin: 0px 0px 0px 0px; width: 800px; height:auto; float:left}
+.pagecontent .three_list_div ul {float:left}
+.pagecontent .three_list_div .ul_1 {width: 250px}
+.pagecontent .three_list_div .ul_3 {width: 250px}
+.pagecontent .three_list_div .ul_2 {width: 300px}
+
+.pagecontent .three_list_div ul li {list-style-type:disc;width:inherit; height:30px; line-height:30px; font-size:13px}
+
+.article_list { margin:10px 0px; font-size:13px}
+.article_list a:hover {text-decoration:underline}
+
+.para_up { margin-top:-10px}
+
+table {border: thin #000000 solid ;margin:0px; padding: 0px}
+tr {border: thin #000000 solid ;}
+td {border: thin #000000 solid ;}

@@ -1,0 +1,12 @@
+{% extends "sflawyer/base_extend_human.html" %}
+{% load staticfiles %}
+
+ {% block main_book %}
+ 		  <div class="para para_up">
+            {% for item in latest_human_list %}
+            <div class="article_list">
+            <a href={% url 'human' item.pk%}>{{ item.title }}</a>
+            </div>
+            {% endfor %}
+		  </div>
+ {% endblock %}

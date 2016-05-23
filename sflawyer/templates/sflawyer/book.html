@@ -1,0 +1,12 @@
+{% extends "sflawyer/base_extend_book.html" %}
+{% load staticfiles %}
+
+ {% block main_book %}
+ 		  <div class="para para_up">
+            {% for book_item in latest_book_list %}
+            <div class="article_list">
+            <a href={% url 'book' book_item.pk%}>{{ book_item.title }}</a>
+            </div>
+            {% endfor %}
+		  </div>
+ {% endblock %}

@@ -1,0 +1,18 @@
+{% extends "sflawyer/base_extend.html" %}
+{% load staticfiles %}
+{% block title %}尚法新闻{% endblock %}
+
+{% block main_content %}
+		<div class="dev_fill"></div>
+		<div class="biaoti">
+		<img src={% static 'sflawyer/images/sfnews.png' %} />
+		</div>
+		<div class="pagecontent">
+		  <div id="subnav">
+			<div class="line1"></div>
+			<div class="subt selected"><a href={% url 'news' ''%}>尚法·新闻</a></div>
+		  </div>
+        {% block main_book %}{% endblock %}
+		  <div style="clear:both;"></div>
+		</div>
+{% endblock %}

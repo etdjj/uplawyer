@@ -1,0 +1,67 @@
+{% extends "sflawyer/base_extend.html" %}
+{% load staticfiles %}
+{% block title %}上海市尚法律师事务所{% endblock %}
+
+ {% block main_content %}
+        <div class="banner banner_short">
+			<ul class="showpic_ul">
+			 <li>
+			 <img src={% static 'sflawyer/images/sf-pic1.jpg' %}/>
+			 </li>
+			</ul>
+        </div>
+        <div class="page_content">
+            <div class="page_list">
+            	<span class="page_list_h">
+                <span>尚法</span>新闻
+                </span>
+
+      			<div class="page_list_mid">
+                	<div class="mid_line"></div>
+                    <a href={% url 'news' ''%} title="更多">更多></a>
+                </div>
+
+                <ul class="list_info_ul">
+                    {% for news_instance in latest_news_list %}
+                	<li class="list_info_li"><a href={% url 'news' news_instance.pk%}>{{news_instance.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="page_list">
+             	<span class="page_list_h">
+                <span>法律</span>动态
+                </span>
+
+      			<div class="page_list_mid">
+                	<div class="mid_line"></div>
+                    <a href={% url 'paper'%} title="更多">更多></a>
+                </div>
+
+                <ul class="list_info_ul">
+                    {% for paper_instance in latest_paper_list %}
+                	<li class="list_info_li"><a href={% static paper_instance.GetDocStaticUrl %} target="_blank">
+                        {{paper_instance.GetDocName_S}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="page_list">
+             	<span class="page_list_h">
+                <span>尚法</span>人文
+                </span>
+
+      			<div class="page_list_mid">
+                	<div class="mid_line"></div>
+                    <a href={% url 'human' ''%} title="更多">更多></a>
+                </div>
+
+                <ul class="list_info_ul">
+                    {% for human_instance in latest_human_list %}
+                	<li class="list_info_li"><a href={% url 'human' human_instance.pk%}>{{human_instance.title}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+			<div style="clear:both;"></div>
+			</div>
+ {% endblock %}

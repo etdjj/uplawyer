@@ -1,0 +1,10 @@
+{% extends "sflawyer/base_extend_book.html" %}
+{% load staticfiles %}
+
+ {% block main_book %}
+ <div class="para para_up">
+ <h1>{{ book_instance.title }}</h1>
+ {{ book_instance.main_body | safe }}
+ </div>
+ <div style="clear:both;"></div>
+ {% endblock %}

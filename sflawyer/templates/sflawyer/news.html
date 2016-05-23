@@ -1,0 +1,12 @@
+{% extends "sflawyer/base_extend_news.html" %}
+{% load staticfiles %}
+
+ {% block main_book %}
+ 		  <div class="para para_up">
+            {% for news_item in latest_news_list %}
+            <div class="article_list">
+            <a href={% url 'news' news_item.pk%}>{{ news_item.title }}</a>
+            </div>
+            {% endfor %}
+		  </div>
+ {% endblock %}

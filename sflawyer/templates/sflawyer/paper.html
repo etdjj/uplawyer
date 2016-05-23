@@ -1,0 +1,13 @@
+{% extends "sflawyer/base_extend_paper.html" %}
+{% load staticfiles %}
+
+ {% block main_book %}
+ 		  <div class="para para_up">
+            {% for paper_item in latest_paper_list %}
+                <div class="article_list">
+                <a href={% static paper_item.GetDocStaticUrl %} target="_blank">
+                    {{ paper_item.Getpaper_pub_date_Txt }}-{{ paper_item.GetDocName }}</a>
+                </div>
+            {% endfor %}
+		  </div>
+ {% endblock %}

@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0px}
+
+* a { text-decoration:none}
+* a:link { color:#000000}
+* a:visited {color:#000000}
+
+ul, ol, li {list-style-type:none;vertical-align:0; padding:0px; margin:0px}
+
+body, button, input, select, textarea {
+    /*font-size:13px;*/
+	/*line-height:1.5;*/
+	/*font-family:tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;font-family:'Hiragino Sans GB',"Microsoft Yahei",sans-serif;*/
+    font-family:楷体,tahoma, arial, "Hiragino Sans GB","Microsoft Yahei", 宋体, sans-serif;
+	-webkit-font-smoothing:antialiased;	
+}
+
+#wrap{ width:100%; height:auto; margin:0px;background-color:#FFFFFF}
+
+/*header related*/
+#header{width:1000px; height:auto; margin:0px auto;background-color: #CCC;background-color:#FFFFFF}
+
+#head_nav{width:1000px; height:35px; margin:0px auto; background-color:#888888; border-radius: 5px 5px 5px 5px}
+#head_nav_cont{width:1000px; height:35px; margin:0px auto;}
+#head_nav_cont span { color:#FFF; font-size:13px}
+
+.upl_wc{width:auto; height:18px; margin-top:8.5px; float:left}
+.upl_lang{width:auto; height:18px; margin-top:8.5px; float:left; margin-left:20px}
+.upl_login{width:auto; height:18px; margin-top:8.5px; float:right; margin-right:3px}
+
+#head_logo{width:100%; height:73px; margin:0px;background-color: #FFF;margin: 3px auto}
+#head_logo_cont{width:1000px; height:73px; margin:0px;;margin-left:auto; margin-right:auto; background-color:#FFF}
+.upl_logo{width:auto; height:73px; margin-left:12px; float:left; margin-top:1px}
+.upl_logo img { width:318px;height:73px; float:left;}
+.upl_logo span { display:block; float: left; color:#702A24;font-size:24px; height:75px; line-height:75px; margin-left: 10px; font-weight: bolder; letter-spacing: 2px; font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif}
+#check_box {width:320px; height:73px; margin-top:1px;float:right;}
+#check_box span {height: 73px; line-height:73px; font-size:18px; color: #702A24; font-weight:bold; margin-left:10px; font-style:italic}
+#check_box input {height: 35px; line-height:35px; border-radius: 5px 5px 5px 5px; margin:16px 0px 0px 8px; border:2px solid #702A24;}
+#check_box input placeholder { color:#999}
+
+#banner{width:1000px; height:350px; margin:5px auto 0px auto;position:relative;overflow:hidden;}
+.showpic_ul {height:inherit; margin:0 auto;position:relative; }
+.showpic_ul li {float:left;}
+.showpic_ul li img {width:1000px; height:350px;}
+
+.BntlL { position:absolute; left:0px; top:155px; z-index:10;cursor: pointer}
+.BntlR { position:absolute; right:0px; top:155px; z-index:10; cursor: pointer}
+
+.first,.two,.three,.four{ background-position:center top; background-repeat:no-repeat; height:500px; width:100%;}
+.first{background-image:url(../images/sf_supply.jpg);}
+.two{background-image:url(../images/two.jpg);}
+.three{background-image:url(../images/three.jpg);}
+.four{background-image:url(../images/four.jpg);}
+
+#page{width:1000px; height:260px; margin:0px auto;}
+#main_nav_ul { width:1000px; height:50px; margin:0 auto; padding-left:0px;background-color:#888888}
+#main_nav_ul li {list-style-type:none;}
+#main_nav_ul li:hover { background-color:#FEAA30}
+#main_nav_ul li span {font-weight: bold; font-size:15px; color:#FFF}
+.main_nav_li { width: 140px; height: 40px; float:left; margin:5px 12.5px; text-align:center; line-height: 40px; border: 0px solid #000;}
+
+#page_content {width:1000px; height:200px; margin:0 auto}
+.page_list { width: 303.3px; height: auto; margin-top:5px;margin-right:30px; float:left;}
+.page_list_h { display:block; width:100px; height: 20px; margin-top:5px; margin-left:3px}
+.page_list_mid {width: inherit; height: 25px;}
+.mid_line {width: 80px; height:4px; margin-top:6px; float:left; background-color: #F63}
+.page_list_mid a {display:block; float:right; margin-right:10px; font-size:11px; color:#ADADAD;}
+.list_info_ul {padding-left:0px; width:inherit; height: auto; margin-top: 15px}
+.list_info_ul li {list-style-type:none;}
+.list_info_li { margin:5px 10px; width:auto; height: 20px; font-size: 13px}
+
+#footer{
+	width: 1000px;
+	height: 103px;
+	margin: 0px auto;
+	border: 0px solid #F00;
+}
+
+.divide { width:1000px; height:3px; background-color:#999}
+.footer_left {width:1000px; height:100px;}
+.img_locate {margin-left:50px; float:left; margin-top:29px}
+
+.address {float: left; margin:15px 0 0 15px; width:250px; height: 70px;}
+.address span{color:#999; font-size:13px; margin-top: 15px; display:block}
+.tel {float: right; margin: 15px 15px 0 0; width: 250px, height: 70px; text-align:right}
+.tel span {color:#999; font-size:13px; margin-top: 15px; display:block}
+
+/*About Page*/
+#banner_a {width:1000px; height: 200px;margin:20px auto}
+#banner_a img {width: inherit; height: inherit;}
+
+.content_page {width: 1000px; height: auto; margin:15px auto; position:relative}
+.menu_nav {width: 160px; height:300px; padding-left:0px; float:left}
+.menu_nav li {list-style-type:none; width:inherit; height:36px; background-color:#F2F2F2; border-bottom:1px dashed #999}
+.menu_nav li:hover{ background-color:#97A3A9}
+.menu_nav li img {width: 25px;height:23px; margin:6.5px 10px; float:left}
+.menu_nav li span { line-height:23px; width:100px;height:23px; margin:6.5px 5px; float:left;font-size:14px;color:#000; font-weight:bold}
+.sel_yes { background-color:#97A3A9!important}
+
+.page_context {width:700px; height: auto; margin-left:80px; float:left}
+.page_context h4 {color:#702A24; margin-top:3px}
+.page_context p {margin:10px 0px; font-size:13px; color:#5D5D5D; font-family:微软雅黑}
+
+.book_list {width:700px; height: auto; margin-left:50px; float:left}
+.book_list h3 {color:#702A24; margin-top:3px}
+.article_list { margin:10px 0px; font-size:15px}
+.article_list a:hover {text-decoration:underline}
+
+.article {width:700px; height: auto; margin-left:60px; float:left;}
+.article h3 {margin: 5px 0px 15px 0px; color:#702A24}
+
+.article table {border: thin #000000 solid ;margin:0px; padding: 0px}
+.article tr {border: thin #000000 solid ;}
+.article td {border: thin #000000 solid ;}

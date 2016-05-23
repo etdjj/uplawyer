@@ -1,0 +1,22 @@
+{% extends "sflawyer/base_extend.html" %}
+{% load staticfiles %}
+{% block title %}合作平台{% endblock %}
+
+ {% block main_content %}
+		<div class="dev_fill"></div>
+		<div class="biaoti">
+		<img src={% static 'sflawyer/images/jionus.jpg' %} />
+		</div>
+		<div class="pagecontent">
+		  <div id="subnav">
+			<div class="line1"></div>
+			<div class="subt selected"><a href={% url 'jion'%}>为何加入我们</a></div>
+		  </div>
+		  <div class="para">
+		<p>尚法所有着悠久的历史背景和文化传承，在老一代创始人和律师同仁的努力下，奠定了夯实的基础。随着新一代年轻律师的加入，为尚法所注入了新的活力。</p>
+<p>同时，尚法所内部以独特的管理方式进行管理，以大部制为向导，以项目团队为主要模块，以高度的专业化和分工明确化为客户提供最优质、最合理的法律服务。</p>
+<p>从加入尚法的第一天起，你就能感受到不一样的工作氛围，和谐、温馨、开放是尚法给予年轻律师和新律师的的承诺。</p>
+		  </div>
+		  <div style="clear:both;"></div>
+		</div>
+ {% endblock %}
